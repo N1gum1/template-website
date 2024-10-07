@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap');
+
+:root{
+    --text-color--: #DF9270;
+    --text-color-blend--: #030550;
+    --back-up-color--: #E7FAF9;
+    /* font */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGJlYWNoJTIwYXN0aGV0aWN8ZW58MHx8fHwxNjY0MTI1Mzcy&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: space-between;  
+}
+.logo h1 {
+    font-weight: 800; /* Deixa o título mais forte */
+    font-size: 2rem;
+}
+
+.home-container h1 {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.home-container p {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+ul{
+   list-style: none;
+   display: flex;
+   gap: 3rem; 
+}
+li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+li a:hover{
+    background-color: var(--text-color--);
+    transform: scale(1.1); /*leve aumento ao passar p mouse*/
+}
+.active{
+    background-color: var(--text-color--);
+    margin-top: 30px;
+}
+button{
+    border: 2px solid var(--back-up-color--);
+    background: transparent;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--back-up-color--);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* coloca sombra suave*/
+}
+button:hover{
+    background-color: var(--back-up-color--);
+    color: #000;
+    transform: translateY(-3xp); /*FAaz o botao levantar um pouco quando passa o mouse*/
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+/* hero content */
+
+.home-content{
+    padding: 3rem 5rem;
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    text-align: center;
+}
+.home-container{
+    align-items: center;
+    width: 600px;
+}
+.home-container h1{
+    color: #ffffff;
+    font-size: 5rem;
+    padding-bottom: 30px;
+}
+.home-container p{
+    color: #fff;
+    padding-bottom: 20px;
+}
+#explore{
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .home-container h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .home-container p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+:root.dark {
+    --text-color: #DF9270;
+    --text-color-blend: #E7FAF9;
+    --back-up-color: #030550;
+    --background-color: #121212;
+    --text-light: #fff;
+}
+
+body.dark {
+    background-color: var(--background-color);
+    color: var(--text-light);
+}
+
+:root.dark {
+    --text-color: #DF9270;
+    --text-color-blend: #E7FAF9;
+    --back-up-color: #030550;
+    --background-color: #121212;
+    --text-light: #fff;
+}
+
+body.dark {
+    background-color: var(--background-color);
+    color: var(--text-light);
+
+}
+#theme-toggle{
+    border: none;
+    background-color: var(--text-color);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: var(--background-color 0.3s ease, transform 0.3s ease);
+    position: fixed;
+    right: 20px;
+}
+#theme-toggle:hover {
+    background-color: #DF9270;
+    transform: scale(1.05);
+}
+
+.button-container {
+    display: flex;
+    
+
+
+}
+
+
+
+
+
+
+
+   
+
+
+
+
